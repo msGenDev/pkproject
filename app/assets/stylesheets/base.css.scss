@@ -6,45 +6,71 @@ $lighter_gray: #F5F5F5;
 $shiny_button_dark: #B1B1B1;
 $shiny_button_light: #c8c8c8;
 
+body {
+  background: #FFFFFF url('bg_form.png') left top;
+  background: -webkit-gradient(linear, 
+                              left top, 
+                              left 100, 
+                              from(#FFFFFF), 
+                              color-stop(4%, $light_gray), 
+                              to(#FFFFFF));
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  padding-top: 10em;
+}
+
 
 a.shiny_button {
   color: $font_color;
-  
   background-color: $light_gray;
   background-image: -webkit-linear-gradient($lighter_gray, $shiny_button_light);
-  background-image: -moz-linear-gradient($lighter_gray, $shiny_button_light);
-  
   border: 1px solid #646464;
   border-top: 1px solid $shiny_button_dark;
   border-left: 1px solid $shiny_button_dark;
-  
   box-shadow: rgba(0,0,0, 0.25) 1px 1px 2px;
-
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
-  
   text-align: center;
   text-decoration: none;
   text-shadow: #FFF 0 1px 0;
-  
   padding: 0.2em 0.7em;
-  
   white-space: nowrap;
 }
 
 a.shiny_button:hover {
   background-image: -webkit-linear-gradient($lighter_gray, $shiny_button_dark);
   background-image: -moz-linear-gradient($lighter_gray, $shiny_button_dark);
-  
   box-shadow: rgba(0,0,0, 0.35) 1px 1px 2px;
 }
 
 a.shiny_button:active {
   background-image: -webkit-linear-gradient($shiny_button_light, $light_gray);
   background-image: -moz-linear-gradient($shiny_button_light, $light_gray);
-  
   border: 1px solid #A5A5A5;
-  
   box-shadow: none;
+}
+
+input {
+  background: #FFFFFF url('bg_form.png') left top repeat-x;
+  background: -webkit-gradient(linear, 
+                              left top, 
+                              left 25, 
+                              from(#FFFFFF), 
+                              color-stop(4%, #EEEEEE), 
+                              to(#FFFFFF));   
+  border: solid 1px $light_gray;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 8px;
+  padding: 0.5em;
+  outline: 0;
+}
+input:hover, input:focus {
+  border-color: #c9c9c9;
+  box-shadow: rgba(0, 0 , 0, 0.15) 0 0 8px;
+}
+
+#header, #content, #footer {
+  margin: 0 auto;
+  width: 960px;
 }
