@@ -12,7 +12,7 @@
     <% if controller.action_name == 'home' %>
       <%= link_to 'Bricks', bricks_path, class: 'left' %>
       <%= link_to 'Categories', categories_path %>
-      <%= link_to 'States', states_path %> 
+      <%= link_to 'States', states_path %>
     <% else %>
       <%= link_to_unless_current 'About', about_path, class: 'left' %>
     <% end %>
@@ -27,6 +27,12 @@
   <div id="content">
     <%= yield %>
   </div>
+  
+  <footer id="footer">
+    <p id="copy">
+      <a href="http://www.umc.edu">The University of Mississippi Medical Center</a>
+    </p>
+  </footer>
 
 </body>
 </html>

@@ -84,22 +84,24 @@ input:hover {
   border-bottom: 1px solid rgba(200, 200, 200, 1);
   border-bottom-left-radius: 6px;
   font-size: 0.75em;
-  padding: 0.5em;
   position: absolute;
     top: 0;
     right: 0;
   a {
     border-left: 1px solid rgba(240, 240, 240, 0.5);
     color: $light_font;
+    display: inline-block;
+    margin-left: -2px;
     padding: 0.5em;
     text-decoration: none;
   }
   a:hover {
-    color: #3C8DDE;
-    text-decoration: underline;
+    background: #3C8DDE;
+    border-left: 1px solid rgba(240, 240, 240, 0.75);
+    color: #FFF;
   }
   a.left {
-    border: none;
+    border-bottom-left-radius: 6px;
   }
 }
 
@@ -117,4 +119,22 @@ input:hover {
   border-left: 1px solid rgba(0,0,0, 0.05);
   border-radius: 4px;
   box-shadow: rgba(0,0,0, 0.15) 1px 2px 5px 0px;
+}
+
+#footer {
+  margin-top: 2em;
+  #copy, #copy a {
+    color: rgba(210,210,210, 0.75);
+  }
+  #copy {
+    font-size: 0.75em;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #3C8DDE;
+      text-decoration: underline;
+    }
+  }
 }
