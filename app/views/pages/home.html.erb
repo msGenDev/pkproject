@@ -1,7 +1,11 @@
 <%= form_tag '/search', method: 'get', do %>
-  <%= text_field_tag :search, params[:search], placeholder: '...' %>
-  <%= radio_button_tag 'all', 'all', checked: true %>
-  <%= radio_button_tag 'Bricks', 'bricks' %>
-  <%= radio_button_tag 'Categories', 'categories' %>
-  <%= radio_button_tag 'States', 'states' %>
-<% end %>                        
+  <fieldset>
+    <%= text_field_tag :search, params[:search], placeholder: '...' %>
+  </fieldset>
+  <fieldset>
+    <%= radio_button_tag 'all', 'all', checked: true %>
+    <%= radio_button_tag 'Bricks', 'bricks' %>
+    <%= radio_button_tag 'Categories', 'categories' %>
+    <%= radio_button_tag 'States', 'states' %>
+  </fieldset>
+<% end %>                       

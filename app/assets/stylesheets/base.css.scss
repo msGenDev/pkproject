@@ -16,9 +16,10 @@ body {
                               to(#FFFFFF));
   background-repeat: no-repeat;
   background-repeat: repeat-x;
+  font: 100%;
   padding-top: 10em;
+  height: 50em;
 }
-
 
 a.shiny_button {
   color: $font_color;
@@ -65,12 +66,21 @@ input {
   padding: 0.5em;
   outline: 0;
 }
-input:hover, input:focus {
+input:hover {
   border-color: #c9c9c9;
   box-shadow: rgba(0, 0 , 0, 0.15) 0 0 8px;
 }
 
 #header, #content, #footer {
   margin: 0 auto;
-  width: 960px;
+  max-width: 60em;
+  padding: 0.5em;
+}
+
+#content {
+  border: 1px solid rgba(0,0,0, 0.15);
+  border-top: 1px solid rgba(0,0,0, 0.001);
+  border-left: 1px solid rgba(0,0,0, 0.05);
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0, 0.15) 1px 1px 2px;
 }
