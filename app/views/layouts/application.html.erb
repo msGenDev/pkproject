@@ -23,6 +23,13 @@
   </nav>
   <header id="header">
     <h1><%= link_to_unless_current 'pkProject', root_url %></h1>
+    <% unless controller.action_name == 'home' %>
+      <nav>
+        <%= link_to 'Bricks', bricks_path, class: 'left' %> / 
+        <%= link_to 'Categories', categories_path %> / 
+        <%= link_to 'States', states_path %> / 
+      </nav>
+    <% end %>
   </header>
 
   <div id="content">

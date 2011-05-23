@@ -117,13 +117,22 @@ input:focus {
 #header {
   margin-bottom: 1em;
   h1, h1 a {
-    color: $light_font;
+    
     font-family: 'Puritan', 'Helvetica', 'Arial', 'sans-serif';
     font-size: 1.5em;
   }
-  h1 {
+  h1, nav {
+    display: inline-block;
     a {
+      color: $light_font;
       text-decoration: none;
+    }
+    a.left {
+      margin-left: 1em;
+    }
+    a:hover {
+      color: $link;
+      text-decoration: underline;
     }
   }
 }
