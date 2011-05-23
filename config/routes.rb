@@ -7,5 +7,7 @@ Pkproject::Application.routes.draw do
   get '/categories' => 'pages#categories', as: 'categories'
   get '/state' => 'pages#states', as: 'states'
   
+  get '/search' => 'search#index'
+  
   root to: 'pages#home'
 end
