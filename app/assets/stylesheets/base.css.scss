@@ -76,7 +76,15 @@ input:focus {
   border-color: $link;
   box-shadow: $link 0 0 8px;
 }
-
+#search {
+  input {
+    background: url('search.png') 4px center no-repeat, url('bg_form.png') left top repeat-x;
+    background-color: #FFF;
+    background-size: 16px 16px;
+    padding: 0.5em;
+    padding-left: 2.5em;
+  }
+}
 #header, #content, #footer {
   margin: 0 auto;
   max-width: 60em;
@@ -127,6 +135,12 @@ input:focus {
       color: $light_font;
       text-decoration: none;
     }
+  }
+  form {
+    display: inline-block;
+    margin-left: 2em;
+  }
+  nav {
     a.left {
       margin-left: 1em;
     }
