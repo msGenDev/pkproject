@@ -73,6 +73,10 @@ input:hover {
   border-color: #c9c9c9;
   box-shadow: rgba(0, 0 , 0, 0.15) 0 0 8px;
 }
+input:focus {
+  border-color: $link;
+  box-shadow: $link 0 0 8px;
+}
 
 #header, #content, #footer {
   margin: 0 auto;
