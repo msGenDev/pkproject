@@ -1,4 +1,5 @@
-$font_color: #333333;
+$font_color: rgba(51, 51, 51, 1);
+$light_font: rgba(51, 51, 51, 0.5);
 
 $light_gray: #E5E5E5;
 $lighter_gray: #F5F5F5;
@@ -16,9 +17,9 @@ body {
                               to(#FFFFFF));
   background-repeat: no-repeat;
   background-repeat: repeat-x;
+  color: $light_font;
   font: 100%;
   padding-top: 10em;
-  height: 50em;
 }
 
 a.shiny_button {
@@ -75,6 +76,14 @@ input:hover {
   margin: 0 auto;
   max-width: 60em;
   padding: 0.5em;
+}
+
+#header {
+  margin-bottom: 1em;
+  h1 {
+    font-family: 'Puritan';
+    font-size: 2em;
+  }
 }
 
 #content {

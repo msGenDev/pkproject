@@ -12,6 +12,12 @@ $lighter_gray: #F5F5F5;
   #header, #content, #footer {
     max-width: 35em;
   }
+  #header {
+    h1 {
+      font-size: 3em;
+      text-align: center;
+    }
+  }
   #search {
     font-size: 1.25em;
     margin-top: 0.5em;
