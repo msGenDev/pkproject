@@ -2,10 +2,14 @@
   <fieldset>
     <%= text_field_tag :search, params[:search], placeholder: '...' %>
   </fieldset>
-  <fieldset>
-    <%= radio_button_tag 'all', 'all', checked: true %>
-    <%= radio_button_tag 'Bricks', 'bricks' %>
-    <%= radio_button_tag 'Categories', 'categories' %>
-    <%= radio_button_tag 'States', 'states' %>
+  <fieldset id="search_buttons">
+    <%= radio_button_tag 'search', 'all', checked: true %>
+    <%= label_tag 'search_all', 'All' %>
+    <%= radio_button_tag 'search', 'bricks' %>
+    <%= label_tag 'search_bricks', 'Bricks' %>
+    <%= radio_button_tag 'search', 'categories' %>
+    <%= label_tag 'search_categories', 'Categories' %>
+    <%= radio_button_tag 'search', 'states' %>
+    <%= label_tag 'search_states', 'States' %>
   </fieldset>
 <% end %>                       
