@@ -1,0 +1,32 @@
+<section id="searchResults" class="main">
+  <header>
+    <h1>Search Results</h1>
+  </header>
+  
+  <ol>
+    <%= 10.times do %>
+      <li>
+        <article>
+          <header>
+            <h1><a href="#">This is a search result</a></h1>
+          </header>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis, odio quis tincidunt interdum, augue urna euismod odio, eget tempus risus ligula non nibh. Etiam purus ipsum, condimentum ut faucibus in, aliquet sed felis. Nullam pharetra ultrices lectus. Phasellus dui sapien, sollicitudin quis imperdiet at, dictum nec quam. Phasellus non.
+          </div>
+        </article>
+      </li>
+    <% end %>
+  </ol>
+</section>
+
+<div id="sidebar">
+  <section>
+    <header>
+      <h1>Filter Results</h1>
+    </header>
+    Show All
+    <a href="#">Bricks Only</a>
+    <a href="#">Categories Only</a>
+    <a href="#">States Only</a>
+  </section>
+</div>
