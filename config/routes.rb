@@ -1,11 +1,12 @@
 Pkproject::Application.routes.draw do
-  
+
+  resources :bricks,      only: [:index, :show]
+  resources :categories,  only: [:index, :show]
+  resources :states,      only: [:index, :show]
+
   get '/about' => 'pages#about', as: 'about'
   get '/help' => 'pages#help', as: 'help'
   get '/contact' => 'pages#contact', as: 'contact'
-  get '/bricks' => 'pages#bricks', as: 'bricks'
-  get '/categories' => 'pages#categories', as: 'categories'
-  get '/state' => 'pages#states', as: 'states'
   
   get '/search' => 'search#index'
   
