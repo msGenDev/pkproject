@@ -21,6 +21,7 @@ body {
   background-repeat: repeat-x;
   color: $light_font;
   font-family: 'Helvetica', 'Arial', 'sans-serif';
+  min-height: 8em;
 }
 
 a.shiny_button {
@@ -85,10 +86,16 @@ input:focus {
     padding-left: 2.5em;
   }
 }
-#header, #content, #footer {
+
+#container {
   margin: 0 auto;
   max-width: 60em;
   padding: 0.5em;
+}
+
+#header, #content, #footer {
+  width: 100%;
+  float: left;
 }
 
 #topNav {

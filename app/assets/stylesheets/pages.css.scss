@@ -13,7 +13,8 @@ $link: #3C8DDE;
 
 #home {
   padding-top: 5em;
-  #header, #content, #footer {
+  #container, #header, #content, #footer {
+    float: none;
     max-width: 35em;
   }
   #header {
