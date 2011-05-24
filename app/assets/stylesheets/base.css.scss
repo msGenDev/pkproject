@@ -24,6 +24,10 @@ body {
   min-height: 8em;
 }
 
+a {
+  color: $link;
+}
+
 a.shiny_button {
   color: $font_color;
   background-color: $light_gray;
@@ -183,13 +187,24 @@ input:focus {
   #sidebar {
     margin-left: 0.625em;
     width: 28%;
-    h1 {
-      color: $font_color;
-      font-size: 1.25em;
+    section {
+      header {
+        margin-bottom: 0.5em;
+        h1 {
+          color: $font_color;
+          font-size: 1.25em;
+        }
+      }
+      a {
+        display: block;
+        margin-top: 0.25em;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     }
-    a {
-      display: block;
-    }
+
   }
 }
 
