@@ -1,11 +1,17 @@
 module ApplicationHelper
   
   def google_font_link_tag(family, text = "pkProject")
-    tag('link', {:rel => :stylesheet, :type => Mime::CSS, :href => "http://fonts.googleapis.com/css?family=#{family}?text=#{text}"}, false, false)
+    tag('link', 
+        { :rel => :stylesheet, 
+                  :type => Mime::CSS, 
+                  :href => "http://fonts.googleapis.com/css?family=#{family}?text=#{text}"
+        }, 
+        false, 
+        false)
   end
   
   def view_id
-    return 'home' if controller.action_name == 'home'
+    return 'home' if on_home?
     controller.controller_name
   end
   
@@ -14,12 +20,17 @@ module ApplicationHelper
   end
   
   def show_links
-    return render 'shared/standard_links' unless controller.action_name == 'home'
+    return render 'shared/standard_links' unless on_home?
     render 'shared/home_links'
   end
   
   def show_header_nav
-    render 'shared/header_nav' unless controller.action_name == 'home'
+    render 'shared/header_nav' unless on_home?
   end
   
+  private
+  
+  def on_home?
+    controller.action_name == 'home'
+  end
 end
