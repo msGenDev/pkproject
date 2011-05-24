@@ -1,7 +1,7 @@
 <section id="searchResults" class="main">
   <header>
     <h1>Search Results</h1>
-    <%= form_tag '/search', method: 'get', do %>
+    <%= form_tag '/search', method: 'get', id: 'searchBox' do %>
       <%= text_field_tag :search, params[:search], placeholder: '...' %>
     <% end %>
   </header>

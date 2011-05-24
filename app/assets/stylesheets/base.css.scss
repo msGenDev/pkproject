@@ -77,13 +77,14 @@ input:focus {
   border-color: $link;
   box-shadow: $link 0 0 8px;
 }
-#search {
+#searchBox {
   input {
     background: url('search.png') 4px center no-repeat, url('bg_form.png') left top repeat-x;
     background-color: #FFF;
     background-size: 16px 16px;
-    padding: 0.5em;
-    padding-left: 2.5em;
+    font-size: 1em;
+    padding: 0.25em;
+    padding-left: 1.5em;
   }
 }
 
@@ -172,6 +173,11 @@ input:focus {
     width: 70%;
     h1 {
       display: none;
+    }
+    article {
+      h1 {
+        display: block;
+      }
     }
   }
   #sidebar {

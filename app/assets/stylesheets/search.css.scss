@@ -3,3 +3,16 @@
   They will automatically be included in application.css.
   You can use Sass (SCSS) here: http://sass-lang.com/
 */
+#search {
+  #searchBox {
+    input {
+      background: url('search.png') 8px center no-repeat, url('bg_form.png') left top repeat-x;
+      background-color: #FFF;
+      background-size: 24px 24px;
+      font-size: 1.5em;
+      padding: 0.25em;
+      padding-left: 2em;
+      width: 88%;
+    }
+  }
+}
