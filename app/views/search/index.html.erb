@@ -1,13 +1,11 @@
 <section id="searchResults" class="main">
   <header>
     <h1>Search Results</h1>
-    <%= form_tag '/search', method: 'get', id: 'searchBox' do %>
-      <%= text_field_tag :search, params[:search], placeholder: '...' %>
-    <% end %>
+    <%= render 'shared/search_box' %>
   </header>
   
   <ol>
-    <%= 10.times do %>
+    <% 10.times do %>
       <li>
         <article>
           <header>
@@ -20,6 +18,9 @@
       </li>
     <% end %>
   </ol>
+  <footer>
+    <%= render 'shared/search_box' %>
+  </footer>
 </section>
 
 <div id="sidebar">
